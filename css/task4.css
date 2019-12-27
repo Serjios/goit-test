@@ -21,11 +21,19 @@ body {
   font-size: 18px;
 }
 
-.item-menu li {
+.item {
   list-style: none;
+}
+
+.item:not(:first-child) {
+  margin-left: 12px;
 }
 
 .item-menu {
   display: flex;
   justify-content: flex-end;
+}
+
+.item-menu a {
+  padding: 12px 20px;
 }
