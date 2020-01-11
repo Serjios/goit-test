@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #2a2a2a;
+}
+
+.box {
+  display: inline-flex;
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:first-child {
+  position: absolute;
+  background-color: blue;
+}
+
+.box:nth-child(2) {
+  position: absolute;
+  background-color: red;
+  right: 0;
+  top: 0;
+}
+
+.box:nth-child(3) {
+  position: absolute;
+  background-color: green;
+  right: 0;
+  bottom: 0;
+}
+
+.box:last-child {
+  position: absolute;
+  background-color: orange;
+  left: 0;
+  bottom: 0;
+}
