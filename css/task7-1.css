@@ -1,0 +1,33 @@
+.content,
+.sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  background-color: rgb(226, 226, 164);
+}
+.sidebar {
+  background-color: rgb(149, 231, 149);
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    display: flex;
+  }
+  .content,
+  .sidebar {
+    height: 200px;
+  }
+  .content {
+    flex-basis: 75%;
+  }
+  .sidebar {
+    flex-basis: 25%;
+  }
+}
