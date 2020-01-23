@@ -1,0 +1,26 @@
+@media screen and (max-width: 767px) {
+  .red,
+  .green {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .green {
+    background-color: green;
+  }
+
+  .blue {
+    height: 70px;
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    /* display: flex; */
+  }
+}
