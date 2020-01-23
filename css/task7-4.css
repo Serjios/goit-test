@@ -1,0 +1,47 @@
+.feature,
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.feature:first-child {
+  background-color: yellow;
+}
+
+.feature:last-child {
+  background-color: green;
+}
+
+.items {
+  background-color: rgb(207, 205, 97);
+}
+
+.item:nth-child(2) {
+  background-color: rgb(233, 151, 212);
+}
+
+@media screen and (max-width: 479px) {
+  .features {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    display: flex;
+  }
+  .feature {
+    flex-basis: 50%;
+    height: 200px;
+  }
+
+  .items {
+    display: flex;
+  }
+
+  .item {
+    flex-basis: calc(100% / 3);
+  }
+}
